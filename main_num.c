@@ -35,4 +35,7 @@ void main() {
 	timersub(&end, &start, &diff);
 	time_used = diff.tv_sec + (double)diff.tv_usec/1000000.0;
 	printf("HeapSort_num Time Used  = %f s \n", time_used);
+	
+	// free
+	free(input);
 }
